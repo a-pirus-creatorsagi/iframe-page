@@ -4,9 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demo Dialog</title>
-    <script src="https://test-popup-xi.vercel.app/demo.js"></script>
+  <script src="https://test-popup-xi.vercel.app/demo.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7fafc;
+    }
+    .mock-header {
+      background: linear-gradient(90deg, #00b6c9 0%, #1ecb8b 100%);
+      color: #fff;
+      padding: 24px 0 16px 0;
+      text-align: center;
+      position: relative;
+    }
+    .mock-header .mock-badge {
+      background: #ffd600;
+      color: #222;
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    .mock-header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    .mock-main {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      padding: 36px 32px 32px 32px;
+      text-align: center;
+    }
+    .mock-main h2 {
+      color: #00b6c9;
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+    .mock-main p {
+      color: #444;
+      font-size: 1.1rem;
+      margin-bottom: 28px;
+    }
+    .mock-btn {
+      background: #ff2d00;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 14px 32px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      box-shadow: 0 2px 8px rgba(255,45,0,0.08);
+    }
+    .mock-btn:hover {
+      background: #d92600;
+    }
+    .mock-disclaimer {
+      margin-top: 32px;
+      color: #888;
+      font-size: 0.98rem;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-    zenoti.com
+  <div class="mock-header">
+    <div class="mock-badge">DEMO MOCKUP</div>
+    <h1>AI First Platform for Salons & Spas</h1>
+  </div>
+  <div class="mock-main">
+    <h2>Grow your business with AI-powered tools</h2>
+    <p>This is a <b>demo mockup</b> inspired by the Zenoti.com homepage. Colors and layout are for demonstration only.<br>
+    <br>
+    <span style="color:#1ecb8b;font-weight:600;">Not functional</span> – for UI preview purposes.</p>
+    <button class="mock-btn">Get a free demo</button>
+    <div class="mock-disclaimer">
+      All content and visuals are for demo purposes only.
+    </div>
+  </div>
 </body>
 </html> 
