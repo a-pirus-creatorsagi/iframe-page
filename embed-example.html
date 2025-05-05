@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatbot Embed Example</title>
-</head>
-<body>
-  hi
+  </head>
+  <body>
+    hi
+    <!-- Basic usage with required configuration -->
+    <script
+      src="https://test-popup-xi.vercel.app/embed.js"
+      data-chat-url="https://test-popup-xi.vercel.app"
+    ></script>
 
-<div class="chat-container">
-  <iframe 
-      src="https://test-popup-xi.vercel.app/bridge?domain=https://test-popup-xi.vercel.app&origin=https://test-popup-xi.vercel.app"
-      style="width: 600px; height: 1000px; border: none;"
-      title="Chat Interface"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-  ></iframe>
-</div>
-</body>
+    <!-- Advanced usage with all configuration options -->
+    <script
+      src="https://test-popup-xi.vercel.app/embed.js"
+      data-chat-url="https://test-popup-xi.vercel.app"
+      data-container-id="my-custom-chat-container"
+      data-width="800px"
+      data-height="600px"
+      data-allow-fullscreen="true"
+      data-allow-transparency="true"
+      data-allow-payment-request="true"
+      data-allow="microphone; camera"
+      data-sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads allow-modals"
+    ></script>
+
+    <!-- Container for the chat -->
+    <div id="my-custom-chat-container"></div>
+  </body>
 </html>
