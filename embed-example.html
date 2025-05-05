@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot Embed Example</title>
+    <script src="https://test-popup-xi.vercel.app/embed.js"></script>
 </head>
 <body>
   hi
-    <script>
-      window.CreatorsAGIChatConfig = {
-        position: 'bottom-right',
-        width: '400px',
-        height: '600px',
-        domain: 'https://test-popup-xi.vercel.app' // or your custom domain
-      };
-      </script>
-      <script src="https://test-popup-xi.vercel.app/embed.js"></script>
+  <div id="creators-agi-chat"></div>
+
+  <!-- Initialize the chat -->
+  <script>
+      const chat = new CreatorsAGIChat({
+          containerId: 'creators-agi-chat',
+          chatUrl: 'https://test-popup-xi.vercel.app',
+          width: '100%',
+          height: '600px'
+      });
+  </script>
 </body>
 </html>
