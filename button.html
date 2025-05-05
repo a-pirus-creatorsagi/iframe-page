@@ -8,9 +8,13 @@
   <body>
     <div id="creators-agi-chat"></div>
 
+    <!-- First, include the chat button script -->
+    <script src="https://test-popup-xi.vercel.app/chat-button.js"></script>
+
+    <!-- Then, include the embed script with the domain configuration -->
     <script
+      data-chat-domain="why.zenoti.com"
       src="https://test-popup-xi.vercel.app/embed.js"
-      data-chat-url="https://test-popup-xi.vercel.app"
     ></script>
   </body>
 </html>
